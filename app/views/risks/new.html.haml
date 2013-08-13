@@ -1,0 +1,10 @@
+%h1 New Risk
+
+= simple_form_for @risk do |f|
+  = f.input :title
+  = f.input :impact
+  = f.input :likeliness
+
+  .form-actions
+    = f.submit 'Create'
+    = link_to 'Cancel', risks_path, :class => "button"
